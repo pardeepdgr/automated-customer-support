@@ -7,6 +7,9 @@ if __name__ == "__main__":
     spark: SparkSession = SparkSession \
         .builder \
         .appName("AutomatedCustomerSupport") \
+        .config("spark.mongodb.input.uri", "mongodb://localhost:27017/ultimate_ai.messages") \
+        .config("spark.mongodb.output.uri", "mongodb://localhost:27017/ultimate_ai.messages") \
+        .config("spark.jars.packages", "org.mongodb.spark:mongo-spark-connector_2.12:3.0.1") \
         .master("local") \
         .getOrCreate()
 

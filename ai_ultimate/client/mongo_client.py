@@ -2,5 +2,8 @@ from pyspark.sql import DataFrame
 
 
 def save(message: DataFrame):
-    print(message.show(truncate=False))
+    message.write \
+        .format("mongo") \
+        .mode("append") \
+        .save()
     pass
