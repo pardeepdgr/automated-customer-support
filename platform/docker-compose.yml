@@ -1,5 +1,6 @@
 version: "3.8"
 
+# docker-compose is used so data in mongodb doesn't get lost even when container get killed
 services:
   mongodb:
     image : mongo

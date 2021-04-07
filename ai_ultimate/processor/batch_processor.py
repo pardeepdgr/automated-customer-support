@@ -5,6 +5,7 @@ from ai_ultimate.client.mongo_client import save
 from ai_ultimate.processor.covid19_info_extractor import total_cases
 
 
+# get all tweets and remove #, RT: and urls add one column for timestamp and another for total coronavirus cases
 def process_batch(batch: DataFrame, epoch_id: int):
     message: DataFrame = batch \
         .agg(concat_ws(", ", collect_list("value")).alias("tweets")) \
