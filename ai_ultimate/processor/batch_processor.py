@@ -1,8 +1,8 @@
 from pyspark.sql import DataFrame
 from pyspark.sql.functions import current_timestamp, regexp_replace, concat_ws, collect_list
 
-from ai_ultimate.client.mongo_client import save
-from ai_ultimate.processor.covid19_info_extractor import total_cases
+from client.mongo_client import save
+from processor.covid19_info_extractor import total_cases
 
 
 # get all tweets and remove #, RT: and urls add one column for timestamp and another for total coronavirus cases
