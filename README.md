@@ -15,7 +15,7 @@ automated-customer-support processes Twitter’s live tweet stream, fetches tota
 
 3.) Install all required dependencies.
 
-    pip3 install -r requirement.txt 
+    pip3 install -r requirements.txt 
  
 4.) Run mongodb container
 
