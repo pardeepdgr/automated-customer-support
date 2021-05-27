@@ -1,0 +1,25 @@
+CREATE EXTERNAL TABLE nor-lo-test_table_json (
+    hash STRING,
+    detection STRUCT <
+        filename: STRING,
+        filepath: STRING,
+        filesize: BIGINT,
+        name: STRING
+    >,
+    metadata STRUCT <
+        cmdline: STRING,
+        country: STRING,
+        os_name: STRING,
+        os_vmajor: STRING,
+        os_vminor: STRING,
+        parentproc: STRING,
+        parentsize: BIGINT,
+        timestamp: TIMESTAMP
+    >
+)
+PARTITIONED BY(dt STRING)
+CLUSTERED BY(hash) SORTED BY(hash) INTO 2 BUCKETS
+ROW FORMAT
+SERDE 'org.openx.data.jsonserde.JsonSerDe'
+STORED AS TEXTFILE
+LOCATION 's3://nor-lo-test/test-table/';
