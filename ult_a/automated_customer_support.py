@@ -1,6 +1,6 @@
 from pyspark.sql import SparkSession, DataFrame
 from pyspark.sql.streaming import StreamingQuery
-from processor.batch_processor import process_batch
+from ult_a.processor.batch_processor import process_batch
 
 
 if __name__ == "__main__":
