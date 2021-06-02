@@ -1,0 +1,33 @@
+{
+    "analysis-1": {
+        "desktop": "30924",
+        "phone": "42968",
+        "tablet": "1951",
+        "other": "1",
+        "bot": "17"
+    },
+    "analysis-2": {
+        "users": 2182
+    },
+    "analysis-3": {
+        "users_session_less_than_5sec": 3633,
+        "user_journeys_started_with_search_page": 1680,
+        "user_journeys_ended_with_apartment_view": 1653
+    },
+    "analysis-4": {
+        "users": 4111
+    },
+    "analysis-5": {
+        "users": 67
+    },
+    "analysis-6": {
+        "users": 4
+    },
+    "analysis-7": {
+        "user_with_filter_above_1200_EUR": 260,
+        "user_with_filter_below_1200_EUR": 418
+    },
+    "analysis-8": {
+        "users": 30
+    }
+}
