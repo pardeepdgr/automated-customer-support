@@ -1,6 +1,6 @@
 import unittest
 from pyspark.sql import SparkSession, DataFrame
-from ult_a.processor.batch_processor import process_batch
+from customer_support.processor.batch_processor import process_batch
 
 
 class MyTestCase(unittest.TestCase):

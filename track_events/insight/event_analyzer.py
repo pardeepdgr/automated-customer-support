@@ -1,6 +1,6 @@
-from h_li.insight.helper.dataframe_analyzer import *
-from h_li.insight.helper.json_analyzer import *
-from h_li.insight.report.report_generator import create_report
+from track_events.insight.helper.dataframe_analyzer import *
+from track_events.insight.helper.json_analyzer import *
+from track_events.insight.report.report_generator import create_report
 
 
 def generate_report(data: DataFrame):
